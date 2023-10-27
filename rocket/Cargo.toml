@@ -1,0 +1,18 @@
+[package]
+name = "rest-api-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.11"
+rocket_codegen = "0.4.4"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]
